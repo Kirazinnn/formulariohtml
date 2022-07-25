@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+
+<head>
+    <title> Cadastro para entregas </title>
+
+    <meta charset="utf-8" />
+
+</head>
+<p>
+
+    <img src="img/—Pngtree—supermarket shopping cart_1086015.png" alt="" width="80" height="80" align="left">
+</p>
+<br />
+
+<body bgcolor="1A1A1A" text="white" background="img/background site.webp">
+    <br />
+    <font color="" size="3">
+        <P>Loja/cadastro/compra</P>
+        <br />
+
+    </font>
+
+
+
+    <font color="white">
+        <h2 align="center"> FOLL LONNEYL</h2>
+
+    </font>
+
+<form action="enviar.php" method="post" name="Cadastro">
+    <table border="0" width="500" align="center">
+        <tr>
+            <td>
+                <fieldset>
+
+                    <legend> Dados Cadastrais</legend>
+                    </font>
+
+                    <table border="0" align="left" cellpadding="5">
+
+                        <tr>
+                            <td><label> <input type="radio" name="pfj" id="pfj" value="p"> Pessoa física </label></td>
+                            <td> <label> <input type="radio" name="pfj" id="pfj" value="p"> Pessoa jurídica</label></td>
+
+                        </tr>
+                        <tr>
+
+                            <td><label> Nome: </label></td>
+                            <td><input type="text" name="nome" id="nome" size="30"
+                                    placeholder="Digite seu primeiro nome" required></td>
+
+                        </tr>
+                        <tr>
+                            <td><label> Sobrenome: </label></td>
+                            <td><input type="text" name="sobren" id="sobren" size="30"
+                                    placeholder="Digite seu Sobrenome" required></td>
+                        </tr>
+
+                        <tr>
+                            <td><label> Sexo: </label></td>
+                            <td><select name="sexo" id="sexo" required>
+
+                                    <optgroup label="selecione">
+                                        <option value="M"> Masculino </option>
+                                        <option value="F"> Feminino </option>
+
+                                    </optgroup>
+
+                                </select>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label> CPF:</label></td>
+                            <td><input type="text" name="cpf" id="cpf" size="30" placeholder="Digite seu CPF" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label> Telefone: </label></td>
+                            <td><input type="tel" name="telf" id="telf" placeholder="Digite número do Telefone"></td>
+                        </tr>
+
+                        <tr>
+                            <td> Celular: </td>
+                            <td><input type="tel" name="c" id="c" placeholder="Digite número do celular" required></td>
+                        </tr>
+
+                        <tr>
+                            <td><label> Data de Nascimento: </label> </td>
+                            <td><input type="date" name="d" id="d" required></td>
+                        </tr>
+
+
+
+
+                </fieldset>
+
+
+    </table>
+    </td>
+    </tr>
+
+
+    <table border="0" width="500" align="center">
+        <tr>
+            <td>
+                <fieldset>
+                    <legend> Endereço de Entrega </legend>
+                    
+                              <br/>
+                    <table ceellpadding="5" border="0" align="left">
+                        <tr>
+                            <td><label> Cep: </label></td>
+                            <td><input type="text" name="cep" id="cep" placeholder="Digite seu cep" required></td>
+
+                        </tr>
+
+                        <tr>
+                            <td><label> Rua: </label></td>
+                            <td><input type="text" name="Rua" id="Rua" placeholder="Digite nome da sua Rua"></td>
+                        </tr>
+
+                        <tr>
+                            <td><Label> Número: </Label></td>
+                            <td><input type="text" name="nr" id="nr" placeholder="N° da sua casa"></td>
+                        </tr>
+
+                        <tr>
+                            <td><Label> Referência: </Label></td>
+                            <td><input type="text" name="Re" id="Re" placeholder="Casa/apartamento"></td>
+                        </tr>
+
+                        <tr>
+                            <td><Label> Bairro: </Label></td>
+                            <td><input type="text" name="bairro" id="bairro" placeholder="Bairro"></td>
+                        </tr>
+
+                        <tr>
+                            <td><Label> Cidade: </Label></td>
+                            <td><input type="text" name="cid" id="cid" placeholder="Sua cidade"></td>
+                        </tr>
+
+                        <tr>
+                            <td> <label> Estado: </label> </td>
+                            <td><select name="estado" id="estado" required>
+                                    <option value="" selected="selected"> --selecione-- </option>
+
+                                    <optgroup label="Nordeste">
+
+                                        <option value="BA">Bahia</option>
+                                        <option value="AL">Alagoas</option>
+                                        <option value="CE">Ceará</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PI">Piauí</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="SE">Sergipe</option>
+
+                                    </optgroup>
+
+                                    <optgroup label="Sul">
+
+                                        <option value="PR">Paraná</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+
+                                    </optgroup>
+
+                                    <optgroup label="Centro Oeste">
+
+                                        <option value="DF">Distrito Federal</option>
+                                        <option value="GO">Goiás</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                        <option value="MT">Mato Grosso</option>
+
+                                    </optgroup>
+
+                                    <optgroup label="Norte">
+
+                                        <option value="AC">Acre</option>
+                                        <option value="AP">Amapá</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="PA">Pará</option>
+                                        <option value="RO">Rondônia</option>
+                                        <option value="RR">Roraima</option>
+                                        <option value="TO">Tocantins</option>
+
+                                    </optgroup>
+
+                                    <optgroup label="Sudeste">
+
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="ES">Espirito Santo</option>
+
+                                    </optgroup>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td> <label> Anexar Documento: </label> </td>
+                            <th colspan="">
+                                    <br/><br/>
+                                <input type="file" name="anexo" id="anexo" required>
+
+                                <br /><br />
+                            
+                                <input type="submit" name="enviar" id="enviar" value="ENVIAR">
+                                <input type="reset" name="limpar" id="limpar" value="LIMPAR">
+
+                                <br /> <br />
+                                <button type="submit" id="send" name="send">
+                                    <img src="img/—Pngtree—business icons commercial elements_4077229.png" width="80" height="80">
+                                </button>
+                            </th>
+
+                    </table>
+                </form>
+                </fieldset>
+            </td>
+        </tr>
+
+    </table>
+
+
+</body>
+
+
+</table>
+
+</html>
